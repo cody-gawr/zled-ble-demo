@@ -1,0 +1,737 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F82AF514247A1A5600B20522 /* MainToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82AF513247A1A5600B20522 /* MainToolbar.swift */; };
+		F82AF51A247A82E500B20522 /* TextItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82AF519247A82E500B20522 /* TextItem.swift */; };
+		F82AF51C247A879300B20522 /* icon_menu_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = F82AF51B247A879300B20522 /* icon_menu_bar.png */; };
+		F82AF51E247A8BDC00B20522 /* MenuButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82AF51D247A8BDC00B20522 /* MenuButtonStyle.swift */; };
+		F833525E246260D2001A19F4 /* Pods_Zled2020.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A52B6BE3ACDC79DC3949B993 /* Pods_Zled2020.framework */; };
+		F83462A1245A757500700F39 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83462A0245A757500700F39 /* LoadingView.swift */; };
+		F83462A3245A7BB600700F39 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83462A2245A7BB600700F39 /* ActivityIndicator.swift */; };
+		F83462A6245A8E5400700F39 /* ScanResultsType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83462A5245A8E5400700F39 /* ScanResultsType.swift */; };
+		F83462A8245A900600700F39 /* ScanResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83462A7245A900600700F39 /* ScanResults.swift */; };
+		F83462AA245AD8F000700F39 /* ScanStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83462A9245AD8F000700F39 /* ScanStatus.swift */; };
+		F84944A32457B28C008C5491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84944A22457B28C008C5491 /* AppDelegate.swift */; };
+		F84944A52457B28C008C5491 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84944A42457B28C008C5491 /* SceneDelegate.swift */; };
+		F84944A92457B28E008C5491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F84944A82457B28E008C5491 /* Assets.xcassets */; };
+		F84944AC2457B28E008C5491 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F84944AB2457B28E008C5491 /* Preview Assets.xcassets */; };
+		F84944AF2457B28E008C5491 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F84944AD2457B28E008C5491 /* LaunchScreen.storyboard */; };
+		F84944BD2457F6D1008C5491 /* DeviceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84944BC2457F6D1008C5491 /* DeviceList.swift */; };
+		F84944BF2457F76A008C5491 /* DeviceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84944BE2457F76A008C5491 /* DeviceItem.swift */; };
+		F84944C32457F9E1008C5491 /* RxBluetoothKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84944C22457F9E1008C5491 /* RxBluetoothKitService.swift */; };
+		F84944C6245800F1008C5491 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84944C5245800F1008C5491 /* Constant.swift */; };
+		F84944C82458041F008C5491 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84944C72458041F008C5491 /* Result.swift */; };
+		F84944CA24580475008C5491 /* Peripheral+Hashable+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84944C924580475008C5491 /* Peripheral+Hashable+Identifiable.swift */; };
+		F84944CC24580680008C5491 /* Characteristic+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84944CB24580680008C5491 /* Characteristic+Hashable.swift */; };
+		F84944CE2458097D008C5491 /* Characterist+CBCharacteristicWriteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84944CD2458097D008C5491 /* Characterist+CBCharacteristicWriteType.swift */; };
+		F84F64EE245C1D3300DD8E37 /* BackgroundButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84F64ED245C1D3300DD8E37 /* BackgroundButtonStyle.swift */; };
+		F84F64F0245C246C00DD8E37 /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84F64EF245C246C00DD8E37 /* SharedData.swift */; };
+		F84F64F4245C9BF100DD8E37 /* BackgroundItemStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84F64F3245C9BF100DD8E37 /* BackgroundItemStyle.swift */; };
+		F84F64F6245CA09200DD8E37 /* HorizontalLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84F64F5245CA09200DD8E37 /* HorizontalLine.swift */; };
+		F84F64F8245CCFC400DD8E37 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84F64F7245CCFC400DD8E37 /* DataService.swift */; };
+		F84F64FA245CF15F00DD8E37 /* BluetoothDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84F64F9245CF15F00DD8E37 /* BluetoothDevice.swift */; };
+		F84F64FC245D64CA00DD8E37 /* ScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84F64FB245D64CA00DD8E37 /* ScreenCoordinator.swift */; };
+		F84F64FF245D769500DD8E37 /* MainContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84F64FE245D769500DD8E37 /* MainContainer.swift */; };
+		F84F6501245E3BD800DD8E37 /* TestAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84F6500245E3BD700DD8E37 /* TestAnimation.swift */; };
+		F84F6505245E498100DD8E37 /* Sneaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84F6504245E498100DD8E37 /* Sneaker.swift */; };
+		F84F6507245EEB6900DD8E37 /* ScreenStacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84F6506245EEB6900DD8E37 /* ScreenStacks.swift */; };
+		F87807532483A788005D239F /* NavigationDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87807522483A788005D239F /* NavigationDrawer.swift */; };
+		F87807552483AA90005D239F /* DrawerContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87807542483AA90005D239F /* DrawerContent.swift */; };
+		F87807572483DB52005D239F /* ParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87807562483DB52005D239F /* ParentView.swift */; };
+		F89294FD24A7E4CE006CE86D /* MainContainterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89294FC24A7E4CE006CE86D /* MainContainterTest.swift */; };
+		F89294FF24A85BB7006CE86D /* PagerViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89294FE24A85BB7006CE86D /* PagerViewTest.swift */; };
+		F892950124A85EDC006CE86D /* LedCollectionViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F892950024A85EDC006CE86D /* LedCollectionViewTest.swift */; };
+		F892950324A85F33006CE86D /* LedComponentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F892950224A85F33006CE86D /* LedComponentTest.swift */; };
+		F896A3092458E68E007D9ED3 /* DeviceHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F896A3082458E68E007D9ED3 /* DeviceHeader.swift */; };
+		F896A30B2458E69E007D9ED3 /* AlignmentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F896A30A2458E69E007D9ED3 /* AlignmentTest.swift */; };
+		F896A30D24590031007D9ED3 /* icon_search_device.png in Resources */ = {isa = PBXBuildFile; fileRef = F896A30C24590031007D9ED3 /* icon_search_device.png */; };
+		F896A30F245900FD007D9ED3 /* icon_bluetooth_dev.png in Resources */ = {isa = PBXBuildFile; fileRef = F896A30E245900FD007D9ED3 /* icon_bluetooth_dev.png */; };
+		F896A31324590170007D9ED3 /* icon_trash.png in Resources */ = {isa = PBXBuildFile; fileRef = F896A31024590170007D9ED3 /* icon_trash.png */; };
+		F896A31424590170007D9ED3 /* icon_send.png in Resources */ = {isa = PBXBuildFile; fileRef = F896A31124590170007D9ED3 /* icon_send.png */; };
+		F896A31524590170007D9ED3 /* icon_add.png in Resources */ = {isa = PBXBuildFile; fileRef = F896A31224590170007D9ED3 /* icon_add.png */; };
+		F896A317245953F9007D9ED3 /* ScanButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F896A316245953F9007D9ED3 /* ScanButton.swift */; };
+		F8A03A7524A7977C0001D3B2 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A03A7424A7977C0001D3B2 /* Menu.swift */; };
+		F8B51E99249E02B600690790 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B51E98249E02B600690790 /* Tab.swift */; };
+		F8B51E9B249E16DC00690790 /* TabButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B51E9A249E16DC00690790 /* TabButtonStyle.swift */; };
+		F8B51E9D249F4B0900690790 /* SelectedTabButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B51E9C249F4B0900690790 /* SelectedTabButtonStyle.swift */; };
+		F8BE014424A0D60600A9A76F /* SliderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BE014324A0D60600A9A76F /* SliderComponent.swift */; };
+		F8BE014624A0DBD800A9A76F /* ZledSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BE014524A0DBD800A9A76F /* ZledSlider.swift */; };
+		F8C36A8D24A24461005FCB21 /* IconHexModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C36A8C24A24461005FCB21 /* IconHexModifier.swift */; };
+		F8C36A8F24A25FD6005FCB21 /* Sliders.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C36A8E24A25FD6005FCB21 /* Sliders.swift */; };
+		F8C36A9124A26E2D005FCB21 /* ImageButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C36A9024A26E2D005FCB21 /* ImageButtonModifier.swift */; };
+		F8C36A9324A274AD005FCB21 /* RowButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C36A9224A274AD005FCB21 /* RowButtonStyle.swift */; };
+		F8C36A9524A27622005FCB21 /* RowTextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C36A9424A27622005FCB21 /* RowTextModifier.swift */; };
+		F8C36A9724A35F36005FCB21 /* Led.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C36A9624A35F36005FCB21 /* Led.swift */; };
+		F8C36A9B24A37088005FCB21 /* LedComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C36A9A24A37088005FCB21 /* LedComponent.swift */; };
+		F8C36A9D24A375EB005FCB21 /* LedCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C36A9C24A375EB005FCB21 /* LedCollectionView.swift */; };
+		F8C36A9F24A3AF66005FCB21 /* LedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C36A9E24A3AF66005FCB21 /* LedButtonStyle.swift */; };
+		F8C36AC724A4CD46005FCB21 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C36AC624A4CD46005FCB21 /* PageControl.swift */; };
+		F8C36AC924A55A50005FCB21 /* Array+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C36AC824A55A50005FCB21 /* Array+Safe.swift */; };
+		F8C36ACB24A5CE4B005FCB21 /* FeatureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C36ACA24A5CE4B005FCB21 /* FeatureCard.swift */; };
+		F8DF8C6124A6CAF500EA1567 /* PagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DF8C6024A6CAF500EA1567 /* PagerView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		71D2FED6895DE8C7921AE3F2 /* Pods-Zled2020.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zled2020.release.xcconfig"; path = "Target Support Files/Pods-Zled2020/Pods-Zled2020.release.xcconfig"; sourceTree = "<group>"; };
+		7A61FC92269CE047A54955DC /* Pods-Zled2020.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zled2020.debug.xcconfig"; path = "Target Support Files/Pods-Zled2020/Pods-Zled2020.debug.xcconfig"; sourceTree = "<group>"; };
+		A52B6BE3ACDC79DC3949B993 /* Pods_Zled2020.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zled2020.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F82AF513247A1A5600B20522 /* MainToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainToolbar.swift; sourceTree = "<group>"; };
+		F82AF519247A82E500B20522 /* TextItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextItem.swift; sourceTree = "<group>"; };
+		F82AF51B247A879300B20522 /* icon_menu_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_menu_bar.png; sourceTree = "<group>"; };
+		F82AF51D247A8BDC00B20522 /* MenuButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonStyle.swift; sourceTree = "<group>"; };
+		F83462A0245A757500700F39 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		F83462A2245A7BB600700F39 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		F83462A5245A8E5400700F39 /* ScanResultsType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanResultsType.swift; sourceTree = "<group>"; };
+		F83462A7245A900600700F39 /* ScanResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanResults.swift; sourceTree = "<group>"; };
+		F83462A9245AD8F000700F39 /* ScanStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanStatus.swift; sourceTree = "<group>"; };
+		F849449F2457B28C008C5491 /* Zleds 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zleds 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F84944A22457B28C008C5491 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F84944A42457B28C008C5491 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F84944A82457B28E008C5491 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F84944AB2457B28E008C5491 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F84944AE2457B28E008C5491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F84944B02457B28E008C5491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F84944BC2457F6D1008C5491 /* DeviceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceList.swift; sourceTree = "<group>"; };
+		F84944BE2457F76A008C5491 /* DeviceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceItem.swift; sourceTree = "<group>"; };
+		F84944C22457F9E1008C5491 /* RxBluetoothKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxBluetoothKitService.swift; sourceTree = "<group>"; };
+		F84944C5245800F1008C5491 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		F84944C72458041F008C5491 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		F84944C924580475008C5491 /* Peripheral+Hashable+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Peripheral+Hashable+Identifiable.swift"; sourceTree = "<group>"; };
+		F84944CB24580680008C5491 /* Characteristic+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Characteristic+Hashable.swift"; sourceTree = "<group>"; };
+		F84944CD2458097D008C5491 /* Characterist+CBCharacteristicWriteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Characterist+CBCharacteristicWriteType.swift"; sourceTree = "<group>"; };
+		F84F64ED245C1D3300DD8E37 /* BackgroundButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundButtonStyle.swift; sourceTree = "<group>"; };
+		F84F64EF245C246C00DD8E37 /* SharedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedData.swift; sourceTree = "<group>"; usesTabs = 0; };
+		F84F64F3245C9BF100DD8E37 /* BackgroundItemStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundItemStyle.swift; sourceTree = "<group>"; };
+		F84F64F5245CA09200DD8E37 /* HorizontalLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalLine.swift; sourceTree = "<group>"; };
+		F84F64F7245CCFC400DD8E37 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		F84F64F9245CF15F00DD8E37 /* BluetoothDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothDevice.swift; sourceTree = "<group>"; };
+		F84F64FB245D64CA00DD8E37 /* ScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenCoordinator.swift; sourceTree = "<group>"; };
+		F84F64FE245D769500DD8E37 /* MainContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContainer.swift; sourceTree = "<group>"; };
+		F84F6500245E3BD700DD8E37 /* TestAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAnimation.swift; sourceTree = "<group>"; };
+		F84F6504245E498100DD8E37 /* Sneaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sneaker.swift; sourceTree = "<group>"; };
+		F84F6506245EEB6900DD8E37 /* ScreenStacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenStacks.swift; sourceTree = "<group>"; };
+		F87807522483A788005D239F /* NavigationDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDrawer.swift; sourceTree = "<group>"; };
+		F87807542483AA90005D239F /* DrawerContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerContent.swift; sourceTree = "<group>"; };
+		F87807562483DB52005D239F /* ParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentView.swift; sourceTree = "<group>"; };
+		F89294FC24A7E4CE006CE86D /* MainContainterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContainterTest.swift; sourceTree = "<group>"; };
+		F89294FE24A85BB7006CE86D /* PagerViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerViewTest.swift; sourceTree = "<group>"; };
+		F892950024A85EDC006CE86D /* LedCollectionViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedCollectionViewTest.swift; sourceTree = "<group>"; };
+		F892950224A85F33006CE86D /* LedComponentTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedComponentTest.swift; sourceTree = "<group>"; };
+		F896A3082458E68E007D9ED3 /* DeviceHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceHeader.swift; sourceTree = "<group>"; };
+		F896A30A2458E69E007D9ED3 /* AlignmentTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentTest.swift; sourceTree = "<group>"; };
+		F896A30C24590031007D9ED3 /* icon_search_device.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_search_device.png; sourceTree = "<group>"; };
+		F896A30E245900FD007D9ED3 /* icon_bluetooth_dev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_bluetooth_dev.png; sourceTree = "<group>"; };
+		F896A31024590170007D9ED3 /* icon_trash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_trash.png; sourceTree = "<group>"; };
+		F896A31124590170007D9ED3 /* icon_send.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_send.png; sourceTree = "<group>"; };
+		F896A31224590170007D9ED3 /* icon_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_add.png; sourceTree = "<group>"; };
+		F896A316245953F9007D9ED3 /* ScanButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanButton.swift; sourceTree = "<group>"; };
+		F8A03A7424A7977C0001D3B2 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		F8B51E98249E02B600690790 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		F8B51E9A249E16DC00690790 /* TabButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButtonStyle.swift; sourceTree = "<group>"; };
+		F8B51E9C249F4B0900690790 /* SelectedTabButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedTabButtonStyle.swift; sourceTree = "<group>"; };
+		F8BE014324A0D60600A9A76F /* SliderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderComponent.swift; sourceTree = "<group>"; };
+		F8BE014524A0DBD800A9A76F /* ZledSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZledSlider.swift; sourceTree = "<group>"; };
+		F8C36A8C24A24461005FCB21 /* IconHexModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconHexModifier.swift; sourceTree = "<group>"; };
+		F8C36A8E24A25FD6005FCB21 /* Sliders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sliders.swift; sourceTree = "<group>"; };
+		F8C36A9024A26E2D005FCB21 /* ImageButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageButtonModifier.swift; sourceTree = "<group>"; };
+		F8C36A9224A274AD005FCB21 /* RowButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowButtonStyle.swift; sourceTree = "<group>"; };
+		F8C36A9424A27622005FCB21 /* RowTextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowTextModifier.swift; sourceTree = "<group>"; };
+		F8C36A9624A35F36005FCB21 /* Led.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Led.swift; sourceTree = "<group>"; };
+		F8C36A9A24A37088005FCB21 /* LedComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedComponent.swift; sourceTree = "<group>"; };
+		F8C36A9C24A375EB005FCB21 /* LedCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedCollectionView.swift; sourceTree = "<group>"; };
+		F8C36A9E24A3AF66005FCB21 /* LedButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedButtonStyle.swift; sourceTree = "<group>"; };
+		F8C36AC624A4CD46005FCB21 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		F8C36AC824A55A50005FCB21 /* Array+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Safe.swift"; sourceTree = "<group>"; };
+		F8C36ACA24A5CE4B005FCB21 /* FeatureCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCard.swift; sourceTree = "<group>"; };
+		F8DF8C6024A6CAF500EA1567 /* PagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F849449C2457B28C008C5491 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F833525E246260D2001A19F4 /* Pods_Zled2020.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D86224A5C5548A801E35C714 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A61FC92269CE047A54955DC /* Pods-Zled2020.debug.xcconfig */,
+				71D2FED6895DE8C7921AE3F2 /* Pods-Zled2020.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F0B40C17519524448DA96E1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A52B6BE3ACDC79DC3949B993 /* Pods_Zled2020.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F83462A4245A8BF600700F39 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F83462A5245A8E5400700F39 /* ScanResultsType.swift */,
+				F83462A7245A900600700F39 /* ScanResults.swift */,
+				F83462A9245AD8F000700F39 /* ScanStatus.swift */,
+				F84F64EF245C246C00DD8E37 /* SharedData.swift */,
+				F84F64F9245CF15F00DD8E37 /* BluetoothDevice.swift */,
+				F84F64FB245D64CA00DD8E37 /* ScreenCoordinator.swift */,
+				F8C36A9624A35F36005FCB21 /* Led.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F84944962457B28C008C5491 = {
+			isa = PBXGroup;
+			children = (
+				F84944A12457B28C008C5491 /* Zled2020 */,
+				F84944A02457B28C008C5491 /* Products */,
+				D86224A5C5548A801E35C714 /* Pods */,
+				F0B40C17519524448DA96E1F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F84944A02457B28C008C5491 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F849449F2457B28C008C5491 /* Zleds 2.0.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F84944A12457B28C008C5491 /* Zled2020 */ = {
+			isa = PBXGroup;
+			children = (
+				F84944A22457B28C008C5491 /* AppDelegate.swift */,
+				F84944A42457B28C008C5491 /* SceneDelegate.swift */,
+				F83462A4245A8BF600700F39 /* Models */,
+				F84944C4245800E4008C5491 /* Common */,
+				F84944C12457F78F008C5491 /* Resources */,
+				F84944BA2457F62D008C5491 /* Services */,
+				F84944B92457F617008C5491 /* Views */,
+				F84944A82457B28E008C5491 /* Assets.xcassets */,
+				F84944AD2457B28E008C5491 /* LaunchScreen.storyboard */,
+				F84944B02457B28E008C5491 /* Info.plist */,
+				F84944AA2457B28E008C5491 /* Preview Content */,
+			);
+			path = Zled2020;
+			sourceTree = "<group>";
+		};
+		F84944AA2457B28E008C5491 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F84944AB2457B28E008C5491 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F84944B92457F617008C5491 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F84F64FD245D767100DD8E37 /* Main Views */,
+				F84F64EC245C1CE400DD8E37 /* Styles */,
+				F84944C02457F77D008C5491 /* Supporting Views */,
+				F84944BB2457F69E008C5491 /* Scan Views */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F84944BA2457F62D008C5491 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F84944C22457F9E1008C5491 /* RxBluetoothKitService.swift */,
+				F84F64F7245CCFC400DD8E37 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F84944BB2457F69E008C5491 /* Scan Views */ = {
+			isa = PBXGroup;
+			children = (
+				F84944BC2457F6D1008C5491 /* DeviceList.swift */,
+				F84944BE2457F76A008C5491 /* DeviceItem.swift */,
+				F896A3082458E68E007D9ED3 /* DeviceHeader.swift */,
+				F896A30A2458E69E007D9ED3 /* AlignmentTest.swift */,
+			);
+			path = "Scan Views";
+			sourceTree = "<group>";
+		};
+		F84944C02457F77D008C5491 /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+				F896A316245953F9007D9ED3 /* ScanButton.swift */,
+				F83462A0245A757500700F39 /* LoadingView.swift */,
+				F83462A2245A7BB600700F39 /* ActivityIndicator.swift */,
+				F84F64F5245CA09200DD8E37 /* HorizontalLine.swift */,
+				F87807542483AA90005D239F /* DrawerContent.swift */,
+				F84F6504245E498100DD8E37 /* Sneaker.swift */,
+				F82AF519247A82E500B20522 /* TextItem.swift */,
+				F87807522483A788005D239F /* NavigationDrawer.swift */,
+				F8B51E98249E02B600690790 /* Tab.swift */,
+				F8BE014324A0D60600A9A76F /* SliderComponent.swift */,
+				F8BE014524A0DBD800A9A76F /* ZledSlider.swift */,
+				F8C36A8E24A25FD6005FCB21 /* Sliders.swift */,
+				F8C36A9A24A37088005FCB21 /* LedComponent.swift */,
+				F8C36A9C24A375EB005FCB21 /* LedCollectionView.swift */,
+				F8C36AC624A4CD46005FCB21 /* PageControl.swift */,
+				F8C36ACA24A5CE4B005FCB21 /* FeatureCard.swift */,
+				F8DF8C6024A6CAF500EA1567 /* PagerView.swift */,
+				F89294FE24A85BB7006CE86D /* PagerViewTest.swift */,
+				F892950024A85EDC006CE86D /* LedCollectionViewTest.swift */,
+				F892950224A85F33006CE86D /* LedComponentTest.swift */,
+			);
+			path = "Supporting Views";
+			sourceTree = "<group>";
+		};
+		F84944C12457F78F008C5491 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F896A31224590170007D9ED3 /* icon_add.png */,
+				F896A31124590170007D9ED3 /* icon_send.png */,
+				F896A31024590170007D9ED3 /* icon_trash.png */,
+				F896A30C24590031007D9ED3 /* icon_search_device.png */,
+				F896A30E245900FD007D9ED3 /* icon_bluetooth_dev.png */,
+				F82AF51B247A879300B20522 /* icon_menu_bar.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F84944C4245800E4008C5491 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F84944C5245800F1008C5491 /* Constant.swift */,
+				F84944C72458041F008C5491 /* Result.swift */,
+				F84944C924580475008C5491 /* Peripheral+Hashable+Identifiable.swift */,
+				F84944CB24580680008C5491 /* Characteristic+Hashable.swift */,
+				F84944CD2458097D008C5491 /* Characterist+CBCharacteristicWriteType.swift */,
+				F84F6506245EEB6900DD8E37 /* ScreenStacks.swift */,
+				F8C36AC824A55A50005FCB21 /* Array+Safe.swift */,
+				F8A03A7424A7977C0001D3B2 /* Menu.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F84F64EC245C1CE400DD8E37 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				F84F64ED245C1D3300DD8E37 /* BackgroundButtonStyle.swift */,
+				F84F64F3245C9BF100DD8E37 /* BackgroundItemStyle.swift */,
+				F82AF51D247A8BDC00B20522 /* MenuButtonStyle.swift */,
+				F8B51E9A249E16DC00690790 /* TabButtonStyle.swift */,
+				F8B51E9C249F4B0900690790 /* SelectedTabButtonStyle.swift */,
+				F8C36A8C24A24461005FCB21 /* IconHexModifier.swift */,
+				F8C36A9024A26E2D005FCB21 /* ImageButtonModifier.swift */,
+				F8C36A9224A274AD005FCB21 /* RowButtonStyle.swift */,
+				F8C36A9424A27622005FCB21 /* RowTextModifier.swift */,
+				F8C36A9E24A3AF66005FCB21 /* LedButtonStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		F84F64FD245D767100DD8E37 /* Main Views */ = {
+			isa = PBXGroup;
+			children = (
+				F84F64FE245D769500DD8E37 /* MainContainer.swift */,
+				F84F6500245E3BD700DD8E37 /* TestAnimation.swift */,
+				F82AF513247A1A5600B20522 /* MainToolbar.swift */,
+				F87807562483DB52005D239F /* ParentView.swift */,
+				F89294FC24A7E4CE006CE86D /* MainContainterTest.swift */,
+			);
+			path = "Main Views";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F849449E2457B28C008C5491 /* Zled2020 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F84944B32457B28E008C5491 /* Build configuration list for PBXNativeTarget "Zled2020" */;
+			buildPhases = (
+				88EA907C5F9C24722C124477 /* [CP] Check Pods Manifest.lock */,
+				F849449B2457B28C008C5491 /* Sources */,
+				F849449C2457B28C008C5491 /* Frameworks */,
+				F849449D2457B28C008C5491 /* Resources */,
+				4E6E5FDC0C8C8165008E8C9B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zled2020;
+			productName = Zled2020;
+			productReference = F849449F2457B28C008C5491 /* Zleds 2.0.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F84944972457B28C008C5491 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Ace;
+				TargetAttributes = {
+					F849449E2457B28C008C5491 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = F849449A2457B28C008C5491 /* Build configuration list for PBXProject "Zled2020" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F84944962457B28C008C5491;
+			productRefGroup = F84944A02457B28C008C5491 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F849449E2457B28C008C5491 /* Zled2020 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F849449D2457B28C008C5491 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82AF51C247A879300B20522 /* icon_menu_bar.png in Resources */,
+				F896A31524590170007D9ED3 /* icon_add.png in Resources */,
+				F896A30F245900FD007D9ED3 /* icon_bluetooth_dev.png in Resources */,
+				F896A31424590170007D9ED3 /* icon_send.png in Resources */,
+				F896A31324590170007D9ED3 /* icon_trash.png in Resources */,
+				F84944AF2457B28E008C5491 /* LaunchScreen.storyboard in Resources */,
+				F84944AC2457B28E008C5491 /* Preview Assets.xcassets in Resources */,
+				F896A30D24590031007D9ED3 /* icon_search_device.png in Resources */,
+				F84944A92457B28E008C5491 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E6E5FDC0C8C8165008E8C9B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zled2020/Pods-Zled2020-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zled2020/Pods-Zled2020-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Zled2020/Pods-Zled2020-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88EA907C5F9C24722C124477 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Zled2020-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F849449B2457B28C008C5491 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F84944C32457F9E1008C5491 /* RxBluetoothKitService.swift in Sources */,
+				F8BE014624A0DBD800A9A76F /* ZledSlider.swift in Sources */,
+				F83462A3245A7BB600700F39 /* ActivityIndicator.swift in Sources */,
+				F82AF514247A1A5600B20522 /* MainToolbar.swift in Sources */,
+				F84944A32457B28C008C5491 /* AppDelegate.swift in Sources */,
+				F896A317245953F9007D9ED3 /* ScanButton.swift in Sources */,
+				F84F64F0245C246C00DD8E37 /* SharedData.swift in Sources */,
+				F8C36A9D24A375EB005FCB21 /* LedCollectionView.swift in Sources */,
+				F87807572483DB52005D239F /* ParentView.swift in Sources */,
+				F8C36A9524A27622005FCB21 /* RowTextModifier.swift in Sources */,
+				F84F64F8245CCFC400DD8E37 /* DataService.swift in Sources */,
+				F892950124A85EDC006CE86D /* LedCollectionViewTest.swift in Sources */,
+				F84F64FA245CF15F00DD8E37 /* BluetoothDevice.swift in Sources */,
+				F8C36AC924A55A50005FCB21 /* Array+Safe.swift in Sources */,
+				F84944BF2457F76A008C5491 /* DeviceItem.swift in Sources */,
+				F896A3092458E68E007D9ED3 /* DeviceHeader.swift in Sources */,
+				F84F64F4245C9BF100DD8E37 /* BackgroundItemStyle.swift in Sources */,
+				F8C36ACB24A5CE4B005FCB21 /* FeatureCard.swift in Sources */,
+				F84F64EE245C1D3300DD8E37 /* BackgroundButtonStyle.swift in Sources */,
+				F8B51E9D249F4B0900690790 /* SelectedTabButtonStyle.swift in Sources */,
+				F8C36AC724A4CD46005FCB21 /* PageControl.swift in Sources */,
+				F892950324A85F33006CE86D /* LedComponentTest.swift in Sources */,
+				F8B51E99249E02B600690790 /* Tab.swift in Sources */,
+				F89294FD24A7E4CE006CE86D /* MainContainterTest.swift in Sources */,
+				F83462A1245A757500700F39 /* LoadingView.swift in Sources */,
+				F84944CA24580475008C5491 /* Peripheral+Hashable+Identifiable.swift in Sources */,
+				F89294FF24A85BB7006CE86D /* PagerViewTest.swift in Sources */,
+				F84F6507245EEB6900DD8E37 /* ScreenStacks.swift in Sources */,
+				F84944CC24580680008C5491 /* Characteristic+Hashable.swift in Sources */,
+				F87807552483AA90005D239F /* DrawerContent.swift in Sources */,
+				F83462A6245A8E5400700F39 /* ScanResultsType.swift in Sources */,
+				F8DF8C6124A6CAF500EA1567 /* PagerView.swift in Sources */,
+				F8A03A7524A7977C0001D3B2 /* Menu.swift in Sources */,
+				F8BE014424A0D60600A9A76F /* SliderComponent.swift in Sources */,
+				F84F64F6245CA09200DD8E37 /* HorizontalLine.swift in Sources */,
+				F82AF51E247A8BDC00B20522 /* MenuButtonStyle.swift in Sources */,
+				F83462A8245A900600700F39 /* ScanResults.swift in Sources */,
+				F84944A52457B28C008C5491 /* SceneDelegate.swift in Sources */,
+				F8B51E9B249E16DC00690790 /* TabButtonStyle.swift in Sources */,
+				F8C36A8D24A24461005FCB21 /* IconHexModifier.swift in Sources */,
+				F8C36A9724A35F36005FCB21 /* Led.swift in Sources */,
+				F82AF51A247A82E500B20522 /* TextItem.swift in Sources */,
+				F84944C82458041F008C5491 /* Result.swift in Sources */,
+				F8C36A9324A274AD005FCB21 /* RowButtonStyle.swift in Sources */,
+				F84F6505245E498100DD8E37 /* Sneaker.swift in Sources */,
+				F84944BD2457F6D1008C5491 /* DeviceList.swift in Sources */,
+				F8C36A9B24A37088005FCB21 /* LedComponent.swift in Sources */,
+				F8C36A9124A26E2D005FCB21 /* ImageButtonModifier.swift in Sources */,
+				F83462AA245AD8F000700F39 /* ScanStatus.swift in Sources */,
+				F84F64FC245D64CA00DD8E37 /* ScreenCoordinator.swift in Sources */,
+				F84F64FF245D769500DD8E37 /* MainContainer.swift in Sources */,
+				F896A30B2458E69E007D9ED3 /* AlignmentTest.swift in Sources */,
+				F84944CE2458097D008C5491 /* Characterist+CBCharacteristicWriteType.swift in Sources */,
+				F84F6501245E3BD800DD8E37 /* TestAnimation.swift in Sources */,
+				F87807532483A788005D239F /* NavigationDrawer.swift in Sources */,
+				F8C36A9F24A3AF66005FCB21 /* LedButtonStyle.swift in Sources */,
+				F84944C6245800F1008C5491 /* Constant.swift in Sources */,
+				F8C36A8F24A25FD6005FCB21 /* Sliders.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F84944AD2457B28E008C5491 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F84944AE2457B28E008C5491 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F84944B12457B28E008C5491 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F84944B22457B28E008C5491 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F84944B42457B28E008C5491 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A61FC92269CE047A54955DC /* Pods-Zled2020.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Zled2020/Preview Content\"";
+				DEVELOPMENT_TEAM = Z3GJ73Q54R;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Zled2020/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.03;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zledsllc.srios.zled2.0;
+				PRODUCT_NAME = "Zleds 2.0";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F84944B52457B28E008C5491 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71D2FED6895DE8C7921AE3F2 /* Pods-Zled2020.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Zled2020/Preview Content\"";
+				DEVELOPMENT_TEAM = Z3GJ73Q54R;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Zled2020/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.03;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zledsllc.srios.zled2.0;
+				PRODUCT_NAME = "Zleds 2.0";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F849449A2457B28C008C5491 /* Build configuration list for PBXProject "Zled2020" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F84944B12457B28E008C5491 /* Debug */,
+				F84944B22457B28E008C5491 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F84944B32457B28E008C5491 /* Build configuration list for PBXNativeTarget "Zled2020" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F84944B42457B28E008C5491 /* Debug */,
+				F84944B52457B28E008C5491 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F84944972457B28C008C5491 /* Project object */;
+}

@@ -1,0 +1,51 @@
+PODS:
+  - Realm (5.2.0):
+    - Realm/Headers (= 5.2.0)
+  - Realm/Headers (5.2.0)
+  - RealmSwift (5.2.0):
+    - Realm (= 5.2.0)
+  - RxBluetoothKit (5.3.0):
+    - RxSwift (~> 5.0)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - SwiftMessages (7.0.1):
+    - SwiftMessages/App (= 7.0.1)
+  - SwiftMessages/App (7.0.1)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - RealmSwift
+  - RxBluetoothKit (~> 5.0)
+  - RxCocoa (~> 5)
+  - RxSwift (~> 5)
+  - SwiftMessages
+  - Toast-Swift (~> 5.0.1)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Realm
+    - RealmSwift
+    - RxBluetoothKit
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SwiftMessages
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  Realm: f749c723e272f08fdf1939af5e61d2bd09b203e8
+  RealmSwift: bf0ab78b52c5bafba8b3ad73be8dfb4c1ea5cf01
+  RxBluetoothKit: 0e781978e8a0df70ac3c611dcf44800b76c69f8a
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SwiftMessages: b577dc7043be8b299857ab35bb663dbff6483bd0
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: 3caa9da1cd06c147217e226066a367ac17994d80
+
+COCOAPODS: 1.9.3
